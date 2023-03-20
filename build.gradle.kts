@@ -13,8 +13,12 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	implementation("org.xerial:sqlite-jdbc:3.36.0.1")
+	implementation("org.springframework.boot:spring-boot-starter-web")
+	implementation("org.springframework.boot:spring-boot-starter-jdbc")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	runtimeOnly("com.h2database:h2")
+	runtimeOnly("org.xerial:sqlite-jdbc:3.36.0.1")
 }
 
 tasks.withType<Test> {
