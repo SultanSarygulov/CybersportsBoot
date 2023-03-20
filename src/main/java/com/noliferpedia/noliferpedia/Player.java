@@ -1,5 +1,9 @@
 package com.noliferpedia.noliferpedia;
 
+import jakarta.persistence.Entity;
+
+
+@Entity
 public class Player {
     private String nickname;
     private String name;
